@@ -4,7 +4,7 @@ project(
   version : '1.0.0',
   default_options : ['warning_level=3']
 )
-project_description = 'it ease the management of dynamic arrays for c types'
+project_description = 'read all the contents of text file or binary file'
 
 project_headers = [
   'rajReadFile.h'
@@ -20,7 +20,6 @@ project_target = shared_library(
   meson.project_name(),
   project_source_files,
   install : true,
-  gnu_symbol_visibility : 'hidden',
   include_directories : public_headers,
 )
 
